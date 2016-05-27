@@ -41,7 +41,7 @@
 {
     if (!_btnOnLinePhone) {
         _btnOnLinePhone             = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btnOnLinePhone.frame       = CGRectMake(0, 0, 50, 50);
+        _btnOnLinePhone.frame       = CGRectMake(0, 0, 60, 60);
         _btnOnLinePhone.center      = CGPointMake(ScreenWidth - 50, ScreenHeight - 90);
         [_btnOnLinePhone setImage:[UIImage imageNamed:@"dial_phone_number_icon"] forState:UIControlStateNormal];
         [_btnOnLinePhone setImage:[UIImage imageNamed:@"dial_phone_number_icon"] forState:UIControlStateHighlighted];

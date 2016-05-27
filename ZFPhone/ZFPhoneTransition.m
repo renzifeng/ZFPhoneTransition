@@ -264,7 +264,7 @@
         CAAnimationGroup *groupAnim = [self groupAnimationWithPath:animPath transform:CATransform3DMakeScale(1.0, 1.0, 1) duratio:GroupAnimDuration];
         
         groupAnim.removedOnCompletion = NO;
-        groupAnim.fillMode = kCAFillModeRemoved;
+        groupAnim.fillMode = kCAFillModeForwards;
         
         [ZFPhoneShared.btnOnLinePhone.layer addAnimation:groupAnim forKey:@"keyAnim"];
         ZFPhoneShared.btnOnLinePhone.hidden = NO;
