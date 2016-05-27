@@ -28,6 +28,5 @@
 /** 通话状态按钮 */
 @property(nonatomic,strong) UIButton *btnOnLinePhone;
 + (instancetype)sharedPhone;
-// 获取当前处于activity状态的view controller
-+ (instancetype)currentRootViewController;
+
 @end

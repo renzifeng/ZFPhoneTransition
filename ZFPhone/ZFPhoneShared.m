@@ -26,6 +26,7 @@
 #define ScreenHeight                        [UIScreen mainScreen].bounds.size.height
 
 @implementation ZFPhoneShared
+
 + (instancetype)sharedPhone
 {
     static ZFPhoneShared *instance;
@@ -50,7 +51,6 @@
     }
     return _btnOnLinePhone;
 }
-
 
 - (void)pan:(UIPanGestureRecognizer *)pan
 {
