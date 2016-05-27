@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC07F6FD1CF6A026004BEA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F6FC1CF6A026004BEA8C /* main.m */; };
+		CC07F7001CF6A026004BEA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F6FF1CF6A026004BEA8C /* AppDelegate.m */; };
+		CC07F7031CF6A026004BEA8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7021CF6A026004BEA8C /* ViewController.m */; };
+		CC07F7081CF6A026004BEA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC07F7071CF6A026004BEA8C /* Assets.xcassets */; };
+		CC07F7161CF6A026004BEA8C /* ZFPhoneTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7151CF6A026004BEA8C /* ZFPhoneTransitionTests.m */; };
+		CC07F7211CF6A026004BEA8C /* ZFPhoneTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7201CF6A026004BEA8C /* ZFPhoneTransitionUITests.m */; };
+		CC07F7311CF6A1C0004BEA8C /* ZFPhoneTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7301CF6A1C0004BEA8C /* ZFPhoneTransition.m */; };
+		CCDA17151CF8266A00B8659C /* ZFPhoneShared.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA17141CF8266A00B8659C /* ZFPhoneShared.m */; };
+		CCDA17171CF8267900B8659C /* ZFPhoneOnLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */; };
+		CCDA171A1CF839B400B8659C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC07F7121CF6A026004BEA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC07F6F01CF6A024004BEA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC07F6F71CF6A025004BEA8C;
+			remoteInfo = ZFPhoneTransition;
+		};
+		CC07F71D1CF6A026004BEA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC07F6F01CF6A024004BEA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC07F6F71CF6A025004BEA8C;
+			remoteInfo = ZFPhoneTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC07F6F81CF6A025004BEA8C /* ZFPhoneTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFPhoneTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC07F6FC1CF6A026004BEA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC07F6FE1CF6A026004BEA8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC07F6FF1CF6A026004BEA8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC07F7011CF6A026004BEA8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC07F7021CF6A026004BEA8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC07F7071CF6A026004BEA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC07F70C1CF6A026004BEA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC07F7111CF6A026004BEA8C /* ZFPhoneTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFPhoneTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC07F7151CF6A026004BEA8C /* ZFPhoneTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneTransitionTests.m; sourceTree = "<group>"; };
+		CC07F7171CF6A026004BEA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC07F71C1CF6A026004BEA8C /* ZFPhoneTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFPhoneTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC07F7201CF6A026004BEA8C /* ZFPhoneTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneTransitionUITests.m; sourceTree = "<group>"; };
+		CC07F7221CF6A026004BEA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC07F72F1CF6A1C0004BEA8C /* ZFPhoneTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneTransition.h; sourceTree = "<group>"; };
+		CC07F7301CF6A1C0004BEA8C /* ZFPhoneTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneTransition.m; sourceTree = "<group>"; };
+		CCDA17131CF8266A00B8659C /* ZFPhoneShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneShared.h; sourceTree = "<group>"; };
+		CCDA17141CF8266A00B8659C /* ZFPhoneShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneShared.m; sourceTree = "<group>"; };
+		CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneOnLineViewController.m; sourceTree = "<group>"; };
+		CCDA17181CF8268500B8659C /* ZFPhoneOnLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneOnLineViewController.h; sourceTree = "<group>"; };
+		CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC07F6F51CF6A025004BEA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F70E1CF6A026004BEA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F7191CF6A026004BEA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC07F6EF1CF6A024004BEA8C = {
+			isa = PBXGroup;
+			children = (
+				CC07F6FA1CF6A025004BEA8C /* ZFPhoneTransition */,
+				CC07F7141CF6A026004BEA8C /* ZFPhoneTransitionTests */,
+				CC07F71F1CF6A026004BEA8C /* ZFPhoneTransitionUITests */,
+				CC07F6F91CF6A025004BEA8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC07F6F91CF6A025004BEA8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC07F6F81CF6A025004BEA8C /* ZFPhoneTransition.app */,
+				CC07F7111CF6A026004BEA8C /* ZFPhoneTransitionTests.xctest */,
+				CC07F71C1CF6A026004BEA8C /* ZFPhoneTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC07F6FA1CF6A025004BEA8C /* ZFPhoneTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CC07F6FE1CF6A026004BEA8C /* AppDelegate.h */,
+				CC07F6FF1CF6A026004BEA8C /* AppDelegate.m */,
+				CC07F7011CF6A026004BEA8C /* ViewController.h */,
+				CC07F7021CF6A026004BEA8C /* ViewController.m */,
+				CCDA17181CF8268500B8659C /* ZFPhoneOnLineViewController.h */,
+				CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */,
+				CC07F72E1CF6A1AB004BEA8C /* ZFPhone */,
+				CC07F7071CF6A026004BEA8C /* Assets.xcassets */,
+				CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */,
+				CC07F70C1CF6A026004BEA8C /* Info.plist */,
+				CC07F6FB1CF6A026004BEA8C /* Supporting Files */,
+			);
+			path = ZFPhoneTransition;
+			sourceTree = "<group>";
+		};
+		CC07F6FB1CF6A026004BEA8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC07F6FC1CF6A026004BEA8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC07F7141CF6A026004BEA8C /* ZFPhoneTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC07F7151CF6A026004BEA8C /* ZFPhoneTransitionTests.m */,
+				CC07F7171CF6A026004BEA8C /* Info.plist */,
+			);
+			path = ZFPhoneTransitionTests;
+			sourceTree = "<group>";
+		};
+		CC07F71F1CF6A026004BEA8C /* ZFPhoneTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC07F7201CF6A026004BEA8C /* ZFPhoneTransitionUITests.m */,
+				CC07F7221CF6A026004BEA8C /* Info.plist */,
+			);
+			path = ZFPhoneTransitionUITests;
+			sourceTree = "<group>";
+		};
+		CC07F72E1CF6A1AB004BEA8C /* ZFPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA17131CF8266A00B8659C /* ZFPhoneShared.h */,
+				CCDA17141CF8266A00B8659C /* ZFPhoneShared.m */,
+				CC07F72F1CF6A1C0004BEA8C /* ZFPhoneTransition.h */,
+				CC07F7301CF6A1C0004BEA8C /* ZFPhoneTransition.m */,
+			);
+			path = ZFPhone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC07F6F71CF6A025004BEA8C /* ZFPhoneTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC07F7251CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransition" */;
+			buildPhases = (
+				CC07F6F41CF6A025004BEA8C /* Sources */,
+				CC07F6F51CF6A025004BEA8C /* Frameworks */,
+				CC07F6F61CF6A025004BEA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFPhoneTransition;
+			productName = ZFPhoneTransition;
+			productReference = CC07F6F81CF6A025004BEA8C /* ZFPhoneTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC07F7101CF6A026004BEA8C /* ZFPhoneTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC07F7281CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransitionTests" */;
+			buildPhases = (
+				CC07F70D1CF6A026004BEA8C /* Sources */,
+				CC07F70E1CF6A026004BEA8C /* Frameworks */,
+				CC07F70F1CF6A026004BEA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC07F7131CF6A026004BEA8C /* PBXTargetDependency */,
+			);
+			name = ZFPhoneTransitionTests;
+			productName = ZFPhoneTransitionTests;
+			productReference = CC07F7111CF6A026004BEA8C /* ZFPhoneTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC07F71B1CF6A026004BEA8C /* ZFPhoneTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC07F72B1CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransitionUITests" */;
+			buildPhases = (
+				CC07F7181CF6A026004BEA8C /* Sources */,
+				CC07F7191CF6A026004BEA8C /* Frameworks */,
+				CC07F71A1CF6A026004BEA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC07F71E1CF6A026004BEA8C /* PBXTargetDependency */,
+			);
+			name = ZFPhoneTransitionUITests;
+			productName = ZFPhoneTransitionUITests;
+			productReference = CC07F71C1CF6A026004BEA8C /* ZFPhoneTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC07F6F01CF6A024004BEA8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "任子丰";
+				TargetAttributes = {
+					CC07F6F71CF6A025004BEA8C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ML27AXLXF5;
+					};
+					CC07F7101CF6A026004BEA8C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ML27AXLXF5;
+						TestTargetID = CC07F6F71CF6A025004BEA8C;
+					};
+					CC07F71B1CF6A026004BEA8C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ML27AXLXF5;
+						TestTargetID = CC07F6F71CF6A025004BEA8C;
+					};
+				};
+			};
+			buildConfigurationList = CC07F6F31CF6A024004BEA8C /* Build configuration list for PBXProject "ZFPhoneTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC07F6EF1CF6A024004BEA8C;
+			productRefGroup = CC07F6F91CF6A025004BEA8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC07F6F71CF6A025004BEA8C /* ZFPhoneTransition */,
+				CC07F7101CF6A026004BEA8C /* ZFPhoneTransitionTests */,
+				CC07F71B1CF6A026004BEA8C /* ZFPhoneTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC07F6F61CF6A025004BEA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC07F7081CF6A026004BEA8C /* Assets.xcassets in Resources */,
+				CCDA171A1CF839B400B8659C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F70F1CF6A026004BEA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F71A1CF6A026004BEA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC07F6F41CF6A025004BEA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC07F7031CF6A026004BEA8C /* ViewController.m in Sources */,
+				CC07F7311CF6A1C0004BEA8C /* ZFPhoneTransition.m in Sources */,
+				CCDA17151CF8266A00B8659C /* ZFPhoneShared.m in Sources */,
+				CC07F7001CF6A026004BEA8C /* AppDelegate.m in Sources */,
+				CCDA17171CF8267900B8659C /* ZFPhoneOnLineViewController.m in Sources */,
+				CC07F6FD1CF6A026004BEA8C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F70D1CF6A026004BEA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC07F7161CF6A026004BEA8C /* ZFPhoneTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC07F7181CF6A026004BEA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC07F7211CF6A026004BEA8C /* ZFPhoneTransitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC07F7131CF6A026004BEA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC07F6F71CF6A025004BEA8C /* ZFPhoneTransition */;
+			targetProxy = CC07F7121CF6A026004BEA8C /* PBXContainerItemProxy */;
+		};
+		CC07F71E1CF6A026004BEA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC07F6F71CF6A025004BEA8C /* ZFPhoneTransition */;
+			targetProxy = CC07F71D1CF6A026004BEA8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC07F7231CF6A026004BEA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC07F7241CF6A026004BEA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC07F7261CF6A026004BEA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZFPhoneTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC07F7271CF6A026004BEA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZFPhoneTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC07F7291CF6A026004BEA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZFPhoneTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZFPhoneTransition.app/ZFPhoneTransition";
+			};
+			name = Debug;
+		};
+		CC07F72A1CF6A026004BEA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZFPhoneTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZFPhoneTransition.app/ZFPhoneTransition";
+			};
+			name = Release;
+		};
+		CC07F72C1CF6A026004BEA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZFPhoneTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZFPhoneTransition;
+			};
+			name = Debug;
+		};
+		CC07F72D1CF6A026004BEA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZFPhoneTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zifeng.ZFPhoneTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZFPhoneTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC07F6F31CF6A024004BEA8C /* Build configuration list for PBXProject "ZFPhoneTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC07F7231CF6A026004BEA8C /* Debug */,
+				CC07F7241CF6A026004BEA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC07F7251CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC07F7261CF6A026004BEA8C /* Debug */,
+				CC07F7271CF6A026004BEA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC07F7281CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC07F7291CF6A026004BEA8C /* Debug */,
+				CC07F72A1CF6A026004BEA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC07F72B1CF6A026004BEA8C /* Build configuration list for PBXNativeTarget "ZFPhoneTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC07F72C1CF6A026004BEA8C /* Debug */,
+				CC07F72D1CF6A026004BEA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC07F6F01CF6A024004BEA8C /* Project object */;
+}
