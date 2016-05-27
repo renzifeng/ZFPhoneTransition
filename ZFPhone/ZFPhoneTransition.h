@@ -26,8 +26,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger,ZFTransitionType)
-{
+typedef NS_ENUM(NSInteger,ZFTransitionType) {
     ZFTransitionTypePresent = 0,
     ZFTransitionTypeDismiss  = 1
 };

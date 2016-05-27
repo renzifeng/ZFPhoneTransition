@@ -30,11 +30,6 @@
 
 @implementation ZFPhoneOnLineViewController
 
-- (void)dealloc
-{
-    NSLog(@"销毁");
-}
-
 - (instancetype)init
 {
     self = [super init];

@@ -13,6 +13,13 @@
 * iOS 7+
 * Xcode 6+
 
+## 安装
+### CocoaPods
+
+```ruby
+pod 'ZFPhoneTransition'
+```
+
 ## 效果图
 
 ![图片效果演示](https://github.com/renzifeng/ZFPhoneTransition/raw/master/ZFPhoneTransition.gif)

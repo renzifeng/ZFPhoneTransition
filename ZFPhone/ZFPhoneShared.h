@@ -27,6 +27,7 @@
 @interface ZFPhoneShared : NSObject
 /** 通话状态按钮 */
 @property(nonatomic,strong) UIButton *btnOnLinePhone;
+
 + (instancetype)sharedPhone;
 
 @end
