@@ -51,7 +51,7 @@
     CGPoint point = [pan locationInView:[UIApplication sharedApplication].keyWindow];
     ZFPhoneView *view = (ZFPhoneView *)pan.view;
     
-    CGFloat distance = 30;  // 离四周的最小边距
+    CGFloat distance = 40;  // 离四周的最小边距
     
     if (pan.state == UIGestureRecognizerStateEnded) {
         

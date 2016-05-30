@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#define GroupAnimDuration           1.0
+#define GroupAnimDuration           0.8
 #define RadiusDuration              0.8
 
 #import "ZFPhoneTransition.h"
@@ -269,7 +269,7 @@
             CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
             maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
             maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
-            maskLayerAnimation.duration = RadiusDuration;//[self transitionDuration:transitionContext];
+            maskLayerAnimation.duration = RadiusDuration;
             maskLayerAnimation.delegate = self;
             maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
             [maskLayerAnimation setValue:transitionContext forKey:@"transitionContext"];

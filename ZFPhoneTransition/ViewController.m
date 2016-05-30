@@ -66,8 +66,7 @@
     if (!_btnPhone) {
         
         _btnPhone = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btnPhone.frame = CGRectMake(0, 0, 40, 40);
-        _btnPhone.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2.0, 100);
+        _btnPhone.frame = CGRectMake(0, 0, 30, 30);
         [_btnPhone setImage:[UIImage imageNamed:@"aio_icons_freeaudio"] forState:UIControlStateNormal];
         [_btnPhone setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_btnPhone addTarget:self action:@selector(btnOnLinePhonePressed) forControlEvents:UIControlEventTouchUpInside];
