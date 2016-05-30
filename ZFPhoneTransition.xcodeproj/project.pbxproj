@@ -13,9 +13,9 @@
 		CC07F7081CF6A026004BEA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC07F7071CF6A026004BEA8C /* Assets.xcassets */; };
 		CC07F7161CF6A026004BEA8C /* ZFPhoneTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7151CF6A026004BEA8C /* ZFPhoneTransitionTests.m */; };
 		CC07F7211CF6A026004BEA8C /* ZFPhoneTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC07F7201CF6A026004BEA8C /* ZFPhoneTransitionUITests.m */; };
-		CCDA17171CF8267900B8659C /* ZFPhoneOnLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */; };
+		CC3B3BEC1CFC13B600C8AAEC /* ZFPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3B3BEB1CFC13B600C8AAEC /* ZFPhoneView.m */; };
+		CC3B3BEF1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3B3BEE1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.m */; };
 		CCDA171A1CF839B400B8659C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */; };
-		CCDA172C1CF8448700B8659C /* ZFPhoneShared.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA17291CF8448700B8659C /* ZFPhoneShared.m */; };
 		CCDA172D1CF8448700B8659C /* ZFPhoneTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA172B1CF8448700B8659C /* ZFPhoneTransition.m */; };
 /* End PBXBuildFile section */
 
@@ -51,11 +51,11 @@
 		CC07F71C1CF6A026004BEA8C /* ZFPhoneTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFPhoneTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC07F7201CF6A026004BEA8C /* ZFPhoneTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneTransitionUITests.m; sourceTree = "<group>"; };
 		CC07F7221CF6A026004BEA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneOnLineViewController.m; sourceTree = "<group>"; };
-		CCDA17181CF8268500B8659C /* ZFPhoneOnLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneOnLineViewController.h; sourceTree = "<group>"; };
+		CC3B3BEA1CFC13B600C8AAEC /* ZFPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneView.h; sourceTree = "<group>"; };
+		CC3B3BEB1CFC13B600C8AAEC /* ZFPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneView.m; sourceTree = "<group>"; };
+		CC3B3BED1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneOnLineViewController.h; sourceTree = "<group>"; };
+		CC3B3BEE1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneOnLineViewController.m; sourceTree = "<group>"; };
 		CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CCDA17281CF8448700B8659C /* ZFPhoneShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneShared.h; sourceTree = "<group>"; };
-		CCDA17291CF8448700B8659C /* ZFPhoneShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneShared.m; sourceTree = "<group>"; };
 		CCDA172A1CF8448700B8659C /* ZFPhoneTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPhoneTransition.h; sourceTree = "<group>"; };
 		CCDA172B1CF8448700B8659C /* ZFPhoneTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPhoneTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +112,6 @@
 				CC07F6FF1CF6A026004BEA8C /* AppDelegate.m */,
 				CC07F7011CF6A026004BEA8C /* ViewController.h */,
 				CC07F7021CF6A026004BEA8C /* ViewController.m */,
-				CCDA17181CF8268500B8659C /* ZFPhoneOnLineViewController.h */,
-				CCDA17161CF8267900B8659C /* ZFPhoneOnLineViewController.m */,
 				CCDA17271CF8448700B8659C /* ZFPhone */,
 				CC07F7071CF6A026004BEA8C /* Assets.xcassets */,
 				CCDA17191CF839B400B8659C /* LaunchScreen.storyboard */,
@@ -152,10 +150,12 @@
 		CCDA17271CF8448700B8659C /* ZFPhone */ = {
 			isa = PBXGroup;
 			children = (
-				CCDA17281CF8448700B8659C /* ZFPhoneShared.h */,
-				CCDA17291CF8448700B8659C /* ZFPhoneShared.m */,
 				CCDA172A1CF8448700B8659C /* ZFPhoneTransition.h */,
 				CCDA172B1CF8448700B8659C /* ZFPhoneTransition.m */,
+				CC3B3BED1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.h */,
+				CC3B3BEE1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.m */,
+				CC3B3BEA1CFC13B600C8AAEC /* ZFPhoneView.h */,
+				CC3B3BEB1CFC13B600C8AAEC /* ZFPhoneView.m */,
 			);
 			path = ZFPhone;
 			sourceTree = SOURCE_ROOT;
@@ -291,11 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3B3BEF1CFC290F00C8AAEC /* ZFPhoneOnLineViewController.m in Sources */,
 				CC07F7031CF6A026004BEA8C /* ViewController.m in Sources */,
 				CC07F7001CF6A026004BEA8C /* AppDelegate.m in Sources */,
-				CCDA172C1CF8448700B8659C /* ZFPhoneShared.m in Sources */,
 				CCDA172D1CF8448700B8659C /* ZFPhoneTransition.m in Sources */,
-				CCDA17171CF8267900B8659C /* ZFPhoneOnLineViewController.m in Sources */,
+				CC3B3BEC1CFC13B600C8AAEC /* ZFPhoneView.m in Sources */,
 				CC07F6FD1CF6A026004BEA8C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

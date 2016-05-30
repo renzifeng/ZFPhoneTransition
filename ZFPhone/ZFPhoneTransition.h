@@ -21,10 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
+#define PHONE_VIEW_TAG                      100
+#define WIDTH                               240
+#define SCALE                               (568.0/[UIScreen mainScreen].bounds.size.height)
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ZFPhoneOnLineViewController.h"
+#import "ZFPhoneView.h"
 
 typedef NS_ENUM(NSInteger,ZFTransitionType) {
     ZFTransitionTypePresent = 0,
@@ -35,7 +39,18 @@ typedef NS_ENUM(NSInteger,ZFTransitionType) {
 
 /** 过渡类型 */
 @property (nonatomic ,assign) ZFTransitionType transitionType;
+/** 跳转类型 */
+@property (nonatomic ,assign) ZFPhonePressentType pressetTyp;
+/** 界面消失的位置 */
+@property (nonatomic ,assign) CGRect endRect;
 
-+ (instancetype)transitionWithQSTransitionType:(ZFTransitionType)transitionType;
+/** 按钮悬停位置 */
+@property(nonatomic,assign)CGPoint lastPoint;
+
+/** 控制点 */
+@property (nonatomic ,assign) CGPoint controlPoint;
+
+
++ (instancetype)transitionWithQSTransitionType:(ZFTransitionType)transitionType presentType:(ZFPhonePressentType)presentType;
 
 @end

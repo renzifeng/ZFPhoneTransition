@@ -22,11 +22,11 @@
 // THE SOFTWARE.
 
 #import "ViewController.h"
-#import "ZFPhoneShared.h"
-#import "ZFPhoneOnLineViewController.h"
-#import "AppDelegate.h"
+#import "ZFPhoneTransition.h"
 
 @interface ViewController ()
+/** 电话按钮 */
+@property(nonatomic,strong)UIButton *btnPhone;
 
 @end
 
@@ -37,27 +37,42 @@
     
     self.view.layer.contents = (__bridge id)[UIImage imageNamed:@"qq_portrait"].CGImage;
     
-    ZFPhoneShared *phone = [ZFPhoneShared sharedPhone];
-    [[UIApplication sharedApplication].keyWindow addSubview:phone.btnOnLinePhone];
+    self.navigationItem.title = @"QQ电话";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.btnPhone];
     
-    [phone.btnOnLinePhone addTarget:self action:@selector(btnOnLinePhonePressed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)btnOnLinePhonePressed
+{
+    ZFPhoneOnLineViewController *qqOnlineVC = [[ZFPhoneOnLineViewController alloc] init];
+    
+    if ([[UIApplication sharedApplication].keyWindow viewWithTag:PHONE_VIEW_TAG]) {
+        
+        qqOnlineVC.pressentType = ZFPhoneTransitionPressentTypeMask;
+        
+    }else {
+        
+        qqOnlineVC.pressentType = ZFPhoneTransitionPressentTypeNormal;
+    }
+    
+    [self presentViewController:qqOnlineVC animated:YES completion:nil];
 
 }
 
-- (void)btnOnLinePhonePressed:(UIButton *)btn
+#pragma mark - Getter/Setter
+
+- (UIButton *)btnPhone
 {
-    ZFPhoneOnLineViewController *qqOnlineVC = [[ZFPhoneOnLineViewController alloc] init];
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    id vc = window.rootViewController;
-    if ([vc isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *nav = (UINavigationController *)vc;
-        [nav.topViewController presentViewController:qqOnlineVC animated:YES completion:nil];
-    } else if ([vc isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tab = (UITabBarController *)vc;
-        [tab presentViewController:qqOnlineVC animated:YES completion:nil];
-    } else if ([vc isKindOfClass:[UIViewController class]]) {
-        [vc presentViewController:qqOnlineVC animated:YES completion:nil];
+    if (!_btnPhone) {
+        
+        _btnPhone = [UIButton buttonWithType:UIButtonTypeCustom];
+        _btnPhone.frame = CGRectMake(0, 0, 40, 40);
+        _btnPhone.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2.0, 100);
+        [_btnPhone setImage:[UIImage imageNamed:@"aio_icons_freeaudio"] forState:UIControlStateNormal];
+        [_btnPhone setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_btnPhone addTarget:self action:@selector(btnOnLinePhonePressed) forControlEvents:UIControlEventTouchUpInside];
     }
+    return _btnPhone;
 }
 
 - (void)didReceiveMemoryWarning {

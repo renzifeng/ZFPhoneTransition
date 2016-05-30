@@ -1,5 +1,5 @@
 //
-//  ZFPhoneOnLineViewController.h
+//  ZFPhoneView.h
 //
 // Copyright (c) 2016年 任子丰 ( http://github.com/renzifeng )
 //
@@ -20,9 +20,11 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
 #import <UIKit/UIKit.h>
 
-@interface ZFPhoneOnLineViewController : UIViewController
+@interface ZFPhoneView : UIImageView
+
+/** 记录头像的坐标 */
+@property (nonatomic ,assign) CGPoint firstCenter;
 
 @end

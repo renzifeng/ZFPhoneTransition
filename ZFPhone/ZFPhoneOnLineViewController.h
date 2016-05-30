@@ -1,5 +1,5 @@
 //
-//  ZFPhoneShared.h
+//  ZFPhoneOnLineViewController.h
 //
 // Copyright (c) 2016年 任子丰 ( http://github.com/renzifeng )
 //
@@ -21,13 +21,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ZFPhoneShared : NSObject
-/** 通话状态按钮 */
-@property(nonatomic,strong) UIButton *btnOnLinePhone;
+typedef NS_ENUM(NSInteger,ZFPhonePressentType) {
+    
+    ZFPhoneTransitionPressentTypeNormal = 0,
+    ZFPhoneTransitionPressentTypeMask = 1,
+};
 
-+ (instancetype)sharedPhone;
+@interface ZFPhoneOnLineViewController : UIViewController
+/** 上部分试图 */
+@property(nonatomic,strong)UIView *viewTop;
+
+/** 头像试图，一般封装在viewTop */
+@property(nonatomic,strong)UIImageView *imgIconView;
+
+/** 下部分试图 */
+@property(nonatomic,strong)UIView *viewBottom;
+
+/** 跳转类型 */
+@property (nonatomic ,assign) ZFPhonePressentType pressentType;
+
+/** 电话试图展开前的位置 */
+@property (nonatomic ,assign) CGPoint lastDismissPoint;
+
+
+/** 开始波浪动画 */
+- (void)starLayerAnimation;
+
+/** 停止波浪动画 */
+- (void)stopLayerAnimation;
 
 @end
