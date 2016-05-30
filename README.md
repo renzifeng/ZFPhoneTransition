@@ -27,25 +27,24 @@ pod 'ZFPhoneTransition'
 
 ## 使用
 ```objc
-ZFPhoneShared *phone = [ZFPhoneShared sharedPhone];
-[[UIApplication sharedApplication].keyWindow addSubview:phone.btnOnLinePhone];
-    
-[phone.btnOnLinePhone addTarget:self action:@selector(btnOnLinePhonePressed:) forControlEvents:UIControlEventTouchUpInside];
+#import "ZFPhoneTransition.h"
 
-- (void)btnOnLinePhonePressed:(UIButton *)btn
+// Call button click event
+- (void)btnOnLinePhonePressed
 {
     ZFPhoneOnLineViewController *qqOnlineVC = [[ZFPhoneOnLineViewController alloc] init];
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    id vc = window.rootViewController;
-    if ([vc isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *nav = (UINavigationController *)vc;
-        [nav.topViewController presentViewController:qqOnlineVC animated:YES completion:nil];
-    } else if ([vc isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tab = (UITabBarController *)vc;
-        [tab presentViewController:qqOnlineVC animated:YES completion:nil];
-    } else if ([vc isKindOfClass:[UIViewController class]]) {
-        [vc presentViewController:qqOnlineVC animated:YES completion:nil];
+    
+    if ([[UIApplication sharedApplication].keyWindow viewWithTag:PHONE_VIEW_TAG]) {
+        
+        qqOnlineVC.pressentType = ZFPhoneTransitionPressentTypeMask;
+        
+    }else {
+        
+        qqOnlineVC.pressentType = ZFPhoneTransitionPressentTypeNormal;
     }
+    
+    [self presentViewController:qqOnlineVC animated:YES completion:nil];
+
 }
 ```
 
